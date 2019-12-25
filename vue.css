@@ -269,23 +269,19 @@ body {
     overflow-x: hidden;
 }
 
-#write {
+#content {
     max-width: 860px;
     margin: 0 auto;
     padding: 20px 30px 100px;
 }
 
-#write p {
+#content p {
     line-height: 1.6rem;
     word-spacing: .05rem;
 }
 
-#write ol li {
-    text-indent: 0.5rem;
-}
-
-#write > ul:first-child,
-#write > ol:first-child {
+#content > ul:first-child,
+#content > ol:first-child {
     margin-top: 30px;
 }
 
@@ -529,23 +525,23 @@ table tr td:last-child {
     margin-bottom: 0;
 }
 
-#write strong {
+#content strong {
     padding: 0 1px;
 }
 
-#write em {
+#content em {
     padding: 0 5px 0 2px;
 }
 
-#write table thead th {
+#content table thead th {
     background-color: #f2f2f2;
 }
 
-#write .CodeMirror-gutters {
+#content .CodeMirror-gutters {
     border-right: none;
 }
 
-#write .md-fences {
+#content .md-fences {
     border: 1px solid #F4F4F4;
     -webkit-font-smoothing: initial;
     margin: 0.8rem 0 !important;
@@ -558,11 +554,22 @@ table tr td:last-child {
     word-wrap: normal;
 }
 
-#write .CodeMirror-wrap .CodeMirror-code pre {
-    padding-left: 12px;
+#content .org-src-container pre {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-#write code, tt {
+#content .org-src-container pre.src:before {
+    display: block;
+    position: absolute;
+    color: #b2b2b2;
+    top: 0px;
+    right: 0px;
+    padding: 4px;
+    border: none;
+}
+
+#content code, tt {
     margin: 0 2px;
     padding: 2px 4px;
     border-radius: 2px;
@@ -572,13 +579,13 @@ table tr td:last-child {
     background-color: #f8f8f8;
 }
 
-#write .md-footnote {
+#content .md-footnote {
     background-color: #f8f8f8;
     color: #e96900;
 }
 
 /* heighlight. */
-#write mark {
+#content mark {
     background-color: #EBFFEB;
     border-radius: 2px;
     padding: 2px 4px;
@@ -587,7 +594,7 @@ table tr td:last-child {
     font-weight: 500;
 }
 
-#write del {
+#content del {
     padding: 1px 2px;
 }
 
@@ -623,7 +630,7 @@ table tr td:last-child {
     background-color: #f8f8f8;
 }
 
-#write pre.md-meta-block {
+#content pre.md-meta-block {
     padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
@@ -638,22 +645,22 @@ table tr td:last-child {
     bottom: .375rem;
 }
 
-#write > h3.md-focus:before {
+#content > h3.md-focus:before {
     left: -1.5625rem;
     top: .375rem;
 }
 
-#write > h4.md-focus:before {
+#content > h4.md-focus:before {
     left: -1.5625rem;
     top: .285714286rem;
 }
 
-#write > h5.md-focus:before {
+#content > h5.md-focus:before {
     left: -1.5625rem;
     top: .285714286rem;
 }
 
-#write > h6.md-focus:before {
+#content > h6.md-focus:before {
     left: -1.5625rem;
     top: .285714286rem;
 }
