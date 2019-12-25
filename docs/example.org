@@ -1,0 +1,24 @@
+#+TITLE: example
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./vue.css"/>
+#+OPTIONS: num:nil
+
+* h1
+Simple test goes here
+
+#+BEGIN_QUOTE
+Some simple quoting
+#+END_QUOTE
+
+#+BEGIN_SRC python
+def main():
+    print('hello world')
+#+END_SRC
+
+1. ordered list
+2. ordered list
+
+- unordered list
+- unordered list
+
+** h2
+*** h3
