@@ -665,6 +665,16 @@ table tr td:last-child {
     top: .285714286rem;
 }
 
+#content .todo {
+    color: #50d890;
+    margin-right: 4px;
+}
+
+#content .done {
+    color: #758184;
+    margin-right: 4px;
+}
+
 .md-image > .md-meta {
     border-radius: 3px;
     font-family: Consolas, "Liberation Mono", Courier, monospace;

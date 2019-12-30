@@ -3,10 +3,12 @@
 #+OPTIONS: num:nil
 
 * h1
-Simple test goes here
+Simple text goes here
+
+*bold* ~code~ /italic/ +strikethrough+
 
 #+BEGIN_QUOTE
-Some simple quoting
+Some simple quotes
 #+END_QUOTE
 
 #+BEGIN_SRC python
@@ -14,11 +16,27 @@ def main():
     print('hello world')
 #+END_SRC
 
+And some simple maths, $e^{i\theta}=\cos\theta + i\sin\theta$
+
+| h1        | h2  | h3    |
+|-----------+-----+-------|
+| r1        | r1  | r1    |
+| r2        | r2  | r2    |
+| $\sqrt n$ | $n$ | $n^2$ |
+
+Picture...
+
+#+CAPTION: Here is the caption
+[[file:./images/screenshot-01.png]]
+
 1. ordered list
 2. ordered list
-
-- unordered list
-- unordered list
+   - unordered list
+   - unordered list
+     - [ ] checkbox
+     - [X] checkbox
 
 ** h2
 *** h3
+**** TODO something to do
+**** DONE something that's done

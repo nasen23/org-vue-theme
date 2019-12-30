@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-12-25 Wed 23:55 -->
+<!-- 2019-12-30 Mon 20:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>example</title>
@@ -240,6 +240,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -248,11 +270,11 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0a4d864">h1</a>
+<li><a href="#org8ffc426">h1</a>
 <ul>
-<li><a href="#org4daf683">h2</a>
+<li><a href="#org85e148a">h2</a>
 <ul>
-<li><a href="#orgd68c8d8">h3</a></li>
+<li><a href="#org4ba41e9">h3</a></li>
 </ul>
 </li>
 </ul>
@@ -261,16 +283,20 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org0a4d864" class="outline-2">
-<h2 id="org0a4d864">h1</h2>
-<div class="outline-text-2" id="text-org0a4d864">
+<div id="outline-container-org8ffc426" class="outline-2">
+<h2 id="org8ffc426">h1</h2>
+<div class="outline-text-2" id="text-org8ffc426">
 <p>
-Simple test goes here
+Simple text goes here
+</p>
+
+<p>
+<b>bold</b> <code>code</code> <i>italic</i> <del>strikethrough</del>
 </p>
 
 <blockquote>
 <p>
-Some simple quoting
+Some simple quotes
 </p>
 </blockquote>
 
@@ -280,28 +306,92 @@ Some simple quoting
 </pre>
 </div>
 
+<p>
+And some simple maths, \(e^{i\theta}=\cos\theta + i\sin\theta\)
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">h1</th>
+<th scope="col" class="org-left">h2</th>
+<th scope="col" class="org-left">h3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">r1</td>
+<td class="org-left">r1</td>
+<td class="org-left">r1</td>
+</tr>
+
+<tr>
+<td class="org-left">r2</td>
+<td class="org-left">r2</td>
+<td class="org-left">r2</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\sqrt n\)</td>
+<td class="org-left">\(n\)</td>
+<td class="org-left">\(n^2\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Picture&#x2026;
+</p>
+
+
+<div class="figure">
+<p><img src="./images/screenshot-01.png" alt="screenshot-01.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Here is the caption</p>
+</div>
+
 <ol class="org-ol">
 <li>ordered list</li>
-<li>ordered list</li>
-
+<li>ordered list
+<ul class="org-ul">
 <li>unordered list</li>
-<li>unordered list</li>
+<li>unordered list
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> checkbox</li>
+<li class="on"><code>[X]</code> checkbox</li>
+</ul></li>
+</ul></li>
 </ol>
 </div>
 
-<div id="outline-container-org4daf683" class="outline-3">
-<h3 id="org4daf683">h2</h3>
-<div class="outline-text-3" id="text-org4daf683">
+<div id="outline-container-org85e148a" class="outline-3">
+<h3 id="org85e148a">h2</h3>
+<div class="outline-text-3" id="text-org85e148a">
 </div>
-<div id="outline-container-orgd68c8d8" class="outline-4">
-<h4 id="orgd68c8d8">h3</h4>
+<div id="outline-container-org4ba41e9" class="outline-4">
+<h4 id="org4ba41e9">h3</h4>
+<div class="outline-text-4" id="text-org4ba41e9">
+</div>
+<ul class="org-ul">
+<li><a id="org7ee1e66"></a><span class="todo TODO">TODO</span> something to do<br /></li>
+<li><a id="orgacf1c60"></a><span class="done DONE">DONE</span> something that&rsquo;s done<br /></li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sen Na</p>
-<p class="date">Created: 2019-12-25 Wed 23:55</p>
+<p class="date">Created: 2019-12-30 Mon 20:47</p>
 </div>
 </body>
 </html>
