@@ -1,0 +1,17 @@
+#+TITLE:   org-vue-theme
+
+#+BEGIN_QUOTE
+This is a fork of
+[[https://github.com/blinkfox/typora-vue-theme][blinkfox/typora-vue-theme]].
+Some simple modifications are made to adapt to org-mode.
+#+END_QUOTE
+
+* Usage
+Add the following line to your org files to use the stylesheet.
+#+BEGIN_SRC
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://nasen23.github.io/org-vue-theme/vue.css"/>
+#+END_SRC
+
+*Note* that the org-mode is frequently changing, so the output html file may
+vary in different versions. I'm currently using Org mode 9.3.
+
